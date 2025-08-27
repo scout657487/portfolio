@@ -564,10 +564,12 @@ div p {
     }
 
     .back-ground {
+         height: 80vh; /* increase height */
         background-size: cover;
-        height: auto;
         padding-bottom: 30px;
         position: relative;
+        filter: none; /* remove blur on mobile */
+        animation: none;
     }
 
     .box {
