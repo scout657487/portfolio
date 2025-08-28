@@ -17,6 +17,56 @@ body {
   gap: 100px;
   background-color: #001f7c38;
 }
+header #menu-icon{
+   font-size: 30px;
+   display: none;
+  }
+  .sideBar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    height: 90%;
+    width: 75%;
+     background-color: rgba(17, 2, 43, 0.6);
+    backdrop-filter: blur(40px);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    transition: 0.6s;
+    display: none;
+    
+  }
+  .sideBar .close{
+    font-size: 35px;
+  }
+  .sideBar .first{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 0;
+  }
+  .sideBar .first li{
+    list-style: none;
+    font-size: 25px;
+    color: white;
+    margin-left: 0;
+  }
+  .sideBar .first a{
+    text-decoration: none;
+    color: white;
+    margin-left: 0;
+  }
+  .sideBar .second {
+    display: flex;
+    gap: 20px;
+  }
+  .sideBar .second li{
+    list-style: none;
+    font-size: 25px;
+    
+  }
+
 
 .back-vid {
   position: fixed;
@@ -711,6 +761,11 @@ footer h1 {
   header h1{
     font-size: 25px;
   }
+  header #menu-icon{
+   font-size: 30px;
+   display: block;
+  }
+   
   .blackhole-box video{
     margin-top: -16%;
   }
