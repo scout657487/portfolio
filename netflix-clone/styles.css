@@ -350,7 +350,7 @@ form{
     height: 70vh;
 }
 
-.footer {}
+
 
 .faq {
     display: flex;
@@ -512,6 +512,7 @@ div p {
         justify-content: space-between;
         align-items: center;
     }
+   
     input{
         margin-bottom: 10px;
     }
@@ -557,6 +558,7 @@ div p {
     .questions-last {
         text-align: left;
     }
+    
 
     .input1 input,
     .input1 button {

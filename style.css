@@ -726,14 +726,31 @@ footer h1 {
   .scroll-down{
     bottom: 5%;
   }
+  .hero-info{
+    top: 35%;
+  }
+  .scroll-down{
+    bottom: -16%;
+  }
+  
   .hero-info h1{
-    line-height: 50px;
+    line-height: 45px;
+    font-size: 40px;
   }
   .hero-vid-box{
-    height: 200px;
-    top: 5%;
-    right: 5%;
+    height: 300px;
+    top: -40%;
+   left: 20%;
   }
+  .hero-vid-box video{
+    width: 80%;
+   
+  }
+  .info-section{
+    margin-bottom: 250px;
+  }
+   
+  
   .card video{
     width: 100%;
   }
@@ -742,7 +759,15 @@ footer h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 200px;
   }
+  #title{
+    position: absolute;
+    top: -90%;
+    left: 15%;
+    
+  }
+  
   .project-card{
     flex-direction: column;
     margin-left: 0%;
