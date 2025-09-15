@@ -1,6 +1,9 @@
 let menuIcon = document.querySelector("#menu-icon")
 let closeIcon = document.querySelector(".close")
 let sideBar = document.querySelector(".sideBar")
+let cards = document.querySelectorAll(".card")
+let head = document.querySelector(".section1-head")
+let vidBox = document.querySelector(".hero-vid-box")
 document.addEventListener("DOMContentLoaded", () => {
     const video1 = document.querySelector("#projectvideo1");
     const video2 = document.querySelector("#projectvideo2");
@@ -40,3 +43,29 @@ menuIcon.addEventListener("click",()=> {
 closeIcon.addEventListener("click",()=> {
     sideBar.style.display = "none"
 })
+
+
+
+
+gsap.from(".section1-head span", {
+  x: 100,
+  opacity: 0,
+  duration: 2,
+  delay:1,
+  ease: "power3.out",
+  stagger: 0.6 // 👈 same as duration → no overlap
+});
+gsap.from(".hero-info-title", {
+  y: -100,
+  opacity: 0,
+  duration: 2,
+  delay:1,
+  ease: "power3.out", // 👈 same as duration → no overlap
+});
+gsap.from("#leftist", {
+  x: 400,
+  opacity: 0,
+  delay:1,
+  duration: 2,
+  ease: "power3.out", // 👈 same as duration → no overlap
+});
