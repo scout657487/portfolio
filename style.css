@@ -360,9 +360,7 @@ header ul a {
   object-fit: contain;
   mix-blend-mode: lighten;
 }
-.section1-head span{
-  display: inline;
-}
+
 .card button {
   color: white;
   padding: 10px 15px;

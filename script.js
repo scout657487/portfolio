@@ -58,7 +58,7 @@ gsap.from(".section1-head span", {
 gsap.from(".hero-info-title", {
   y: -100,
   opacity: 0,
-  duration: 2,
+  duration: 3,
   delay:1,
   ease: "power3.out", // 👈 same as duration → no overlap
 });
@@ -66,6 +66,6 @@ gsap.from("#leftist", {
   x: 400,
   opacity: 0,
   delay:1,
-  duration: 2,
+  duration: 3,
   ease: "power3.out", // 👈 same as duration → no overlap
 });
