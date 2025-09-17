@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const reportGeneration = document.querySelector(".reportGeneration");
     const gaming = document.querySelector(".gaming");
     const movie = document.querySelector(".movie");
+    let galVid = document.querySelector("#galaxy-vid")
 
     const videoList = [video1, video2, video3];
 
@@ -45,7 +46,15 @@ closeIcon.addEventListener("click",()=> {
 })
 
 
-
+gsap.from("#galaxy-vid",{
+    duration:2.5,
+ease: "bounce.out",
+y: -250,
+    scale:0,
+    opacity:0,
+    duration:2,
+    delay:1.5,
+})
 
 gsap.from(".section1-head span", {
   x: 100,
@@ -69,3 +78,48 @@ gsap.from("#leftist", {
   duration: 3,
   ease: "power3.out", // 👈 same as duration → no overlap
 });
+gsap.registerPlugin(ScrollToPlugin) 
+document.querySelector("a[href='#about']").addEventListener("click",(e)=>{
+    e.preventDefault();
+    gsap.to(window,{
+        duration: 1.5, // increase for slower scroll (1.5s here)
+        ease: "power2.out",
+        scrollTo:{
+            y:"#about",
+            offsetY:-30
+        }
+    })
+})
+document.querySelector("a[href='#projects']").addEventListener("click",(e)=>{
+    e.preventDefault();
+    gsap.to(window,{
+        duration: 1.5, // increase for slower scroll (1.5s here)
+        ease: "power2.out",
+        scrollTo:{
+            y:"#projects",
+            offsetY:-30
+        }
+    })
+})
+document.querySelector("a[href='#skills']").addEventListener("click",(e)=>{
+    e.preventDefault();
+    gsap.to(window,{
+        duration: 2.5, // increase for slower scroll (1.5s here)
+        ease: "power2.out",
+        scrollTo:{
+            y:"#skills",
+            offsetY:-30
+        }
+    })
+})
+document.querySelector("a[href='#home']").addEventListener("click",(e)=>{
+    e.preventDefault();
+    gsap.to(window,{
+        duration: 1.5, // increase for slower scroll (1.5s here)
+        ease: "power2.out",
+        scrollTo:{
+            y:"#home",
+            offsetY:-30
+        }
+    })
+})
