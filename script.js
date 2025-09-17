@@ -47,9 +47,7 @@ closeIcon.addEventListener("click",()=> {
 
 
 gsap.from("#galaxy-vid",{
-    duration:2.5,
-ease: "bounce.out",
-y: -250,
+    y:200,
     scale:0,
     opacity:0,
     duration:2,
@@ -104,7 +102,7 @@ document.querySelector("a[href='#projects']").addEventListener("click",(e)=>{
 document.querySelector("a[href='#skills']").addEventListener("click",(e)=>{
     e.preventDefault();
     gsap.to(window,{
-        duration: 2.5, // increase for slower scroll (1.5s here)
+        duration: 3, // increase for slower scroll (1.5s here)
         ease: "power2.out",
         scrollTo:{
             y:"#skills",

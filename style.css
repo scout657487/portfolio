@@ -17,7 +17,6 @@ body {
   align-items: center;
   gap: 100px;
   background-color: #001f7c38;
-  overflow: hidden;
 }
 header #menu-icon{
    font-size: 30px;
